@@ -1,3 +1,11 @@
+html,body
+{
+  height:100%;
+  width:100%;
+  margin:0px;
+  padding:0px;
+  overflow-x: hidden;
+}
 body {
     font-family: Montserrat;
      text-align: center;
@@ -5,15 +13,18 @@ body {
 
    #intro
    {
-            min-height:100vh;    
+            min-height:100vh; 
+            /* min-width:100vh; */
            padding-top: 20px;
            padding-bottom: 20px;        
-           height:100%;
-           /* width:100%; */
-           width:auto;
-            background:url('../images/code1.jpg') no-repeat center center ; 
+           height:auto;
+           width:100%;
+           /* width:auto; */
+            background:url('../images/code1.jpg') no-repeat center center fixed; 
            background-size:cover;
+        
            color:white;
+           
    }
 
    #about
@@ -261,7 +272,12 @@ body {
     line-height:4.0;
     margin: 25px 25px 60px 90px;
   }
-  
+  @media screen and (max-width: 390px)
+  {
+    .content-conatiner{
+      margin: 25px 25px 25px 25px;
+    }
+  }
   @media screen and (max-width: 480px)
  {
     .ap{
