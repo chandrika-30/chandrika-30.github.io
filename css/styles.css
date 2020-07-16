@@ -103,6 +103,7 @@ body {
 .card-text,.card-title{
   font-weight:bold;
   font-family : 'Ubuntu';
+  line-height: normal;
 }
    #skills
    {
